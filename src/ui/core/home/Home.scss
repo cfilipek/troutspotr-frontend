@@ -1,0 +1,169 @@
+@import "src/ui/styles/_colors";
+@import "src/ui/styles/_variables";
+@import "src/ui/styles/ZeldaText";
+@import "src/ui/styles/NumberCircle";
+
+
+.homeContainer {
+  z-index: 1000;
+  position: static;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px;
+  font-size: 5vmin;
+  margin-bottom: 20vmin;
+}
+
+.titleContainer {
+
+  @media only screen and (min-width: 768px) {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.container {
+  z-index: 1000;
+  position: static;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px;
+  font-size: 5vmin;
+  margin-bottom: 20vmin;
+}
+
+.title {
+  margin-top: 1vmin;
+  font-size: 11vmin;
+  margin-bottom: 6vmin;
+  font-weight: bold;
+  color: $white;
+
+  @media only screen and (min-width: 768px) {
+    margin-top: 0;
+    font-size: 3vmin;
+  }
+}
+
+.equation {
+  text-align: right;
+  font-size: 6.0vmin;
+  width: 60vmin;
+  margin-bottom: 8vmin;
+  font-weight: bold;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 3vmin;
+    margin-bottom: 8vmin;
+    width: 30vmin;
+  }
+
+}
+
+.equationSpan {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Image {
+  width: 10vmin;
+  height: auto;
+}
+
+.importantText {
+  font-size: 4vmin;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 8vmin;
+    p {
+      margin-top: 10px;
+    }
+  }
+}
+
+.secondaryText {
+  font-size: 4vmin;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 3vmin;
+  }
+}
+
+.private {
+  composes: zeldaText;
+  color: $blue;
+}
+
+.public {
+  composes: zeldaText;
+  color: $green;
+}
+
+.blue {
+  color: $blue;
+}
+
+.green {
+  color: $green;
+}
+
+.white {
+  color: $white;
+}
+
+.buttonContainer {
+  @media only screen and (min-width: 768px) {
+
+  }
+}
+
+.button {
+  width: 100%;
+  display: inline-block;
+  font-weight: 400;
+  margin-top: 40px;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 0.5vmin solid transparent;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  color: $green;
+  background-image: none;
+  background-color: transparent;
+  border-color: $green;
+  transform-origin: 50% 50%;
+  cursor: pointer;
+  font-size: 5vmin;
+  animation: buttonAnimation 500ms ease-out;
+  margin-bottom: 4vmin;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 3vmin;
+    width: unset;
+  }
+}
+
+.buttonTwo:hover {
+  box-shadow: inset 0px 0px 0px 0.5vmin $blue;
+}
+
+.button:hover {
+  box-shadow: inset 0px 0px 0px 0.5vmin $green;
+}
+

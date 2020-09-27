@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import Header from './header/Header.container'
 import classes from './CoreLayout.scss'
 import Footer from './footer/Footer.container'
+import Home from './home/Home.component'
 import SneezeGuardComponent from './sneezeGuard/SneezeGuard.component'
 import AgreementComponent from './termsOfAgreement/Agreement.container'
 import {isExpandedSelector} from './header/minimap/Minimap.selectors'
@@ -81,7 +82,7 @@ class CoreLayoutContainer extends Component {
             {this.props.hasAgreedToTerms && this.props.isMinimapExpanded &&
               <SneezeGuardComponent close={this.props.isRoot || this.props.isState ? null : this.props.closeMinimap} />}
             {this.props.hasAgreedToTerms === false &&
-              <AgreementComponent />}
+              <Home />}
           </div>
         </div>
       </div>
